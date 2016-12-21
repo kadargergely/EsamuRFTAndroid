@@ -21,4 +21,5 @@
     <string name="cancel_Login">Login cancelled.</string>
     <string name="error_Login">Login unsuccessfulled.</string>
     <string name="logout">Logout</string>
+    <string name="button_get_picture">Gather</string>
 </resources>

@@ -16,6 +16,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageButton;
@@ -105,6 +106,7 @@ public class ControlActivity extends AppCompatActivity implements ActivityCompat
         viewPagerGame.setCurrentItem(MainButtonsManipulator.BASE_POSITION);
 
         if (mPermissionDenied == false && !isMyServiceRunning(GPSService.class)) {
+            Log.i(this.getClass().getName(), "GPS on");
             Intent intent = new Intent(this, GPSService.class);
             startService(intent);
         }
